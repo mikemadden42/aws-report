@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "aws-report"
+version = "0.1.0"
+description = "Generate a report of AWS resources"
+authors = ["Michael Madden <mikemadden42@icloud.com>"]
+license = "MIT License"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+boto3 = "^1.21.31"
+flake8 = "^4.0.1"
+pylint = "^2.13.4"
+pytest = "^7.1.1"
+pytest-xdist = "^2.5.0"
+requests = "^2.27.1"
+black = "^22.3.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
