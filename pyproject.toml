@@ -16,7 +16,7 @@ flake8 = "^7.0.0"
 pytest-xdist = "^3.3.1"
 # workaround for: https://github.com/python-poetry/poetry-plugin-export/issues/183
 # workaround for: https://github.com/python-poetry/poetry-plugin-export/issues/239
-urllib3 = ">=1.25.4,<1.27"
+# urllib3 = ">=1.25.4,<1.27"
 
 [tool.poetry.dev-dependencies]
 
