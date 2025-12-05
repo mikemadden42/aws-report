@@ -1,28 +1,11 @@
-[tool.poetry]
+[project]
 name = "aws-report"
 version = "0.1.0"
 description = "Generate a report of AWS resources"
-authors = ["Michael Madden <mikemadden42@icloud.com>"]
-license = "MIT License"
-
-[tool.poetry.dependencies]
-python = "^3.9"
-boto3 = "^1.21.31"
-pylint = "^3.0.1"
-pytest = "^8.2.1"
-requests = "^2.27.1"
-black = "^24.3.0"
-flake8 = "^7.0.0"
-pytest-xdist = "^3.3.1"
-# workaround for: https://github.com/python-poetry/poetry-plugin-export/issues/183
-# workaround for: https://github.com/python-poetry/poetry-plugin-export/issues/239
-# urllib3 = ">=1.25.4,<1.27"
-
-[tool.poetry.dev-dependencies]
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.42.3",
+]
 
 [tool.ruff]
 lint.select = [
@@ -39,4 +22,9 @@ lint.select = [
     "B",
     # Pylint
     "PL"
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.8",
 ]
